@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>  
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>Registrazione</title>
+    <link rel="shortcut icon" href="../Immagini/Zip12Logo.png">
+    <!--<link rel="stylesheet" href="../style.css" />-->
+</head>
+
+<body>
+    <table style="background-color: transparent;" border="0" width="100%">
+        <tr height="80">
+
+            <td width="5%"></td>
+
+            <td width="10%" style="position: fixed; top: 36px" align="right"><button type="button" class="button-style" onclick="window.close();">Home</button></td>
+
+            <td width="70%" align="center"><img src="..\Immagini\zip-logo-imm.png" height="115" /></td>
+
+            <td width="12%" style="position: fixed; top: 36px"><button type="button" class="button-style" onclick="location.href = 'chiSiamo.html';">Chi siamo</button></td>
+
+            <td width="3%"></td>
+        </tr>
+    </table>
+
+
+    <script type="text/javascript" src="../JS/home.js"></script>
+    <script type="text/javascript" src="../JS/actions.js"></script>
+    <link rel="stylesheet" href="logincss.css" />
+<br><br>
+    <table align="center" style="width: 60%;">
+        <tr>
+            <td>
+                <div class="login-container" align="center">
+                    <form autocomplete="off">
+
+                        <h1> Registrazione</h1>
+                        <label style="color:white; font-size: 23px"><b> Nome </b></label>
+                        <br>
+                        <input style="width: 50%;" type="text" name="firstname" placeholder="Nome" id="namField" size="15" required />
+                        <br>
+                        <label style="color:white; font-size: 23px"><b> Cognome</b></label>
+                        <br>
+                        <input style="width: 50%" type="text" name="lastname" placeholder="Cognome" size="15" required />
+
+                        <div>
+                            <label style="color:white; font-size: 23px">
+                                <b>Sesso</b>
+                            </label><br>
+                            <input style="color: white" type="radio" value="Male" name="gender" checked> Maschio
+                            <input style="color: white" type="radio" value="Female" name="gender"> Femmina
+                            <input style="color: white" type="radio" value="Other" name="gender"> Altro
+
+                        </div>
+                        <label style="color:white; font-size: 23px">
+                            <b>Cellulare</b>
+                        </label>
+                        <br />
+                        <input style="width: 50%" type="text" name="country code" placeholder="Cellulare" value="+39" size="2" />
+
+                        <br />
+                        <label style="color:white; font-size: 23px" for="email"><b>Email</b></label>
+                        <br />
+                        <input style="width: 50%" type="text" placeholder="Inserisci Email" name="email" required>
+                        <br />
+                        <label style="color:white; font-size: 23px" for="psw"><b>Password</b></label>
+                        <br />
+                        <input style="width: 50%" type="password" placeholder="Inserisci password" name="psw" id="psw" required>
+                        <br />
+                        <label style="color:white; font-size: 23px" for="psw-repeat"><b>Reinserisci password</b></label>
+                        <br />
+                        <input style="width: 50%" type="password" placeholder="Reinserisci password" name="psw-repeat" id="psw-repeat" required>
+                        <br />
+                        <button style="height: 50px; width: 20%" type="submit" class="button-style" onclick="checkPassword()"><b>Registrati</b></button>
+                    </form>
+            </div>
+            </td>
+        </tr>
+    </table>
+            
+</body>
+</html>  
